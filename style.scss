@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+
+#res {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  margin-top: 100px;
+  text-align: center;
+  align-content: center;
+  .card {
+    width: 240px;
+    height: 350px;
+  
+  
+
+    img {
+      width: 200px;
+      height: 250px;
+      
+    }
+  }
+}
+navbar {
+  display: flex;
+  justify-content: space-between;
+  .header1 {
+    display: flex;
+    gap: 10px;
+    .katalog {
+      width: 100px;
+      height: 35px;
+      margin-top: 50px;
+      border-radius: 5px;
+      color: white;
+      background-color: rgba(243, 4, 151, 0.682) ;
+      border-color: transparent;
+      &:hover {
+       background-color: red;
+      }
+    }
+    input {
+      width: 300px;
+      height: 35px;
+      margin-top: 50px;
+      border-radius: 5px;
+      border-color: rgba(0, 0, 0, 0.584);
+    }
+    img {
+      width: 150px;
+      height: 150px;
+    }
+    
+  }
+  .header2 {
+    margin-top: 60px;
+    display: flex;
+    gap: 40px;
+    margin-right: 10px;
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      &:hover {
+        color: rgba(243, 4, 151, 0.801);
+      }
+
+    }
+  }
+}
+.baner {
+  display: flex;
+  justify-content: space-between;
+  background-color:#A1E2EB;
+  .text {
+    width: 600px;
+    h2 {
+      font-size: 60px;
+      color: white;
+      text-align: center;
+      margin: 75px 75px;
+      padding-top: 40px;
+    }
+    button {
+    width: 150px;
+    height: 55px;
+    background-color: transparent;
+    color: white;
+    border-radius: 13px;
+    border: 2px solid white;
+    font-size: 20px;
+    margin-left: 75px;
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+    }
+  }
+
+  .rasm {
+    img {
+      
+      width: 700px;
+      height: 500px;
+    }
+  }
+}
+h1 {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+#res2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  margin-top: 100px;
+  text-align: center;
+  align-content: center;
+  .card2 {
+    width: 240px;
+    height: 350px;
+    img {
+      width: 200px;
+      height: 250px;
+      
+    }
+    p {
+      color: red;
+    }
+  }
+}
+.baner2 {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(263deg, #CA4ACB -0.43%, #F088F2 104.36%);
+  .rasm {
+    img {
+      
+      width: 700px;
+      height: 500px;
+    }
+  }
+  .text {
+    width: 600px;
+    margin-right: 60px;
+    h2 {
+      font-size: 50px;
+      color: white;
+      text-align: center;
+      margin: 75px 75px;
+      padding-top: 40px;
+    }
+    input {
+      width: 300px;
+      height: 55px;
+      background-color: white;
+      color: black;
+      border-radius: 13px;
+      border: 2px solid white;
+      font-size: 20px; 
+      margin-left: 140px;
+      
+    }
+    button {
+    width: 300px;
+    height: 55px;
+    background-color: transparent;
+    color: white;
+    border-radius: 13px;
+    border: 2px solid white;
+    font-size: 20px;
+    margin-left: 140px;
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+    }
+  }
+}
