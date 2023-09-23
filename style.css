@@ -170,4 +170,61 @@ h1 {
   background-color: white;
 }
 
+#res3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  margin-top: 100px;
+  text-align: center;
+  align-content: center;
+}
+#res3 .card3 {
+  width: 240px;
+  height: 350px;
+}
+#res3 .card3 img {
+  width: 200px;
+  height: 250px;
+}
+#res3 .card3 p {
+  color: red;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+}
+.foot h2 {
+  margin-left: 25px;
+  font-size: 30px;
+}
+.foot h1 {
+  font-size: 50px;
+}
+.foot .text2 {
+  margin-right: 200px;
+  font-size: 30px;
+}
+.foot .text2 h1 {
+  font-size: 30px;
+}
+.foot .text2 h5 {
+  margin-left: 20px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: black;
+}
+
+.loaded {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

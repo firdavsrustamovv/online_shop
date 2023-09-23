@@ -2,6 +2,7 @@ const productsUrl = "https://fakestoreapi.com/products?limit=8";
 const cartsUrl = "https://fakestoreapi.com/carts";
 const usersUrl = "https://fakestoreapi.com/users";
 const result = document.getElementById("res");
+const loading =document.getElementById("loading");
 
 function getProducts(){
   fetch(productsUrl)
@@ -9,6 +10,8 @@ function getProducts(){
   .then((data) => showProducts(data));
 }
 function showProducts(arr) {
+loading.classList.remove("loading");
+loading.classList.add("loaded")
 result.innerHTML = "";
 result.innerHTML = arr
 .map((iteam) =>
@@ -51,3 +54,28 @@ function showProducts2(arr) {
   .join("")
 }
 getProducts2();
+
+const productsUrl3 = "https://fakestoreapi.com/products?limit=4";
+const result3 = document.getElementById("res3");
+
+function getProducts3() {
+  fetch(productsUrl3)
+  .then((res) => res.json())
+  .then((data) => showProducts3(data));
+}
+function showProducts3(arr) {
+  result3.innerHTML = "";
+  result3.innerHTML = arr
+  .map((iteam) => {
+  const{ title, price, image } = iteam;
+  return `
+  <div class="card3">
+  <img src="${image}" alt="${title}">
+  <h4>${title}</h4>
+  <p>price: "${price}$"</p>
+  <br>  
+</div>`;
+  })
+  .join("")
+}
+getProducts3();
